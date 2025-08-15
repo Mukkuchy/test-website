@@ -3,13 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Website</title>
+    <title>Interactive Test Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello! This is my test website 🚀</h1>
-    <p>Testing basic HTML, CSS, and JavaScript.</p>
-    <button onclick="sayHello()">Click me</button>
+    <header>
+        <h1>🚀 My Interactive Test Website</h1>
+        <p>Play around with buttons, inputs, and colors!</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Change Background</h2>
+            <button onclick="changeBg('lightblue')">Blue</button>
+            <button onclick="changeBg('lightgreen')">Green</button>
+            <button onclick="changeBg('lightpink')">Pink</button>
+        </section>
+
+        <section class="card">
+            <h2>Say Hello</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="greetUser()">Greet Me</button>
+            <p id="greetingText"></p>
+        </section>
+
+        <section class="card">
+            <h2>Counter</h2>
+            <p id="counterValue">0</p>
+            <button onclick="updateCounter(1)">+</button>
+            <button onclick="updateCounter(-1)">-</button>
+            <button onclick="resetCounter()">Reset</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for testing & learning ❤️</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
